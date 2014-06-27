@@ -1,0 +1,2 @@
+2014-06-27 05:47:09 Warning: Warning (2): Missing argument 1 for CommentController::check_shop() in [E:\xampp\htdocs\websitetemplate\app\controllers\comment_controller.php, line 343]
+2014-06-27 05:47:09 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\xampp\htdocs\websitetemplate\app\views\registrationshop\index.ctp, line 127]

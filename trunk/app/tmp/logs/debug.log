@@ -1,0 +1,2 @@
+2014-06-27 05:47:09 Debug: Notice (8): Undefined variable: user in [E:\xampp\htdocs\websitetemplate\app\controllers\comment_controller.php, line 345]
+2014-06-27 05:47:09 Debug: Notice (8): Undefined variable: city in [E:\xampp\htdocs\websitetemplate\app\views\registrationshop\index.ctp, line 127]
