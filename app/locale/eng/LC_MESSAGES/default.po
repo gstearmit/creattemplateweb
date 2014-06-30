@@ -1,0 +1,53 @@
+﻿	msgid "home"
+msgstr "Home"
+
+msgid "about"
+msgstr "About"
+
+msgid "product"
+msgstr "Product"
+
+msgid "project"
+msgstr "Project"
+
+msgid "agents"
+msgstr "Agents"
+
+msgid "news"
+msgstr "News"
+
+msgid "thuvienanh"
+msgstr "Gallery"
+
+msgid "contact"
+msgstr "Contact"
+
+msgid "partner"
+msgstr "Partner"
+
+msgid "congtrinhtb"
+msgstr "Typical projects"
+
+msgid "support"
+msgstr "Support Online"
+
+msgid "duantieubieu"
+msgstr "Typical projects"
+
+msgid "counter"
+msgstr "Counter"
+
+msgid "online_day"
+msgstr "Day"
+
+msgid "online_all"
+msgstr "Total"
+
+msgid "sptieubieu"
+msgstr "Typical Products"
+
+msgid "readmore"
+msgstr "Read more"
+
+msgid "weather"
+msgstr "Useful information"

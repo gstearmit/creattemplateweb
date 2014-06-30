@@ -1,13 +1,17 @@
 <?php
 class AppError extends ErrorHandler 
 {
-	function missingController ( $params )
-	{
-		extract ( $params , EXTR_OVERWRITE );
+// 	function missingController ( $params )
+// 	{
+// 		extract ( $params , EXTR_OVERWRITE );
 	
-		$this -> controller -> redirect ( '/' );
-	}
+// 		$this -> controller -> redirect ( '/' );
+// 	}
 	
+// 	function error404($params) {
+// 		$this->controller->redirect(array('controller'=>'introflash', 'action'=>'index'));
+// 		parent::error404($params);
+// 	}
 	
 	function error404($params) 
 	{

@@ -1,6 +1,6 @@
 <?php
 class Tems extends AppModel {
-    var $name = 'Tems';//ten cua mode bang contacts
+    var $name = 'Tems';             //ten cua mode bang Template
 	var $belongsTo = array( 
 					'Shops' => array(
 							'className'     => 'Shops', 

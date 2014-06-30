@@ -64,7 +64,7 @@ class UserscmsController extends AppController {
 														) 
 					);
 					if ($this->Userscms->save ( $member_register )) {
-						echo "<script>alert('" . json_encode ( 'Đăng ký thành viên thành công' ) . "');</script>";
+						echo "<script>alert('" . json_encode ( 'Đăng ký tài khoản thành công' ) . "');</script>";
 						echo "<script>location.href='" . DOMAIN . "dang-nhap'</script>";
 					}
 					/*

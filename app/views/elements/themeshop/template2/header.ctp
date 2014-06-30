@@ -33,14 +33,26 @@
 </head>
 <?php 
 
-$mau=$this->requestAction($shopname.'/background');
-foreach($mau as $mau){
+$Background_img = $this->requestAction($shopname.'/background');
 
+// pr($Background_img);
+// die;
+if (is_array($Background_img) and !empty($Background_img)) 
+{
+	foreach($Background_img as $mau){
+	?>
+	<body style="background:<?php if($mau['Background']['images']!='') echo"url(".DOMAIN."/".$mau['Background']['images'].") fixed no-repeat;";
+	else {echo "#".$mau['Background']['color'];}
+	?>">
+	<?php } 
+	}else {
+		?>
+		<body>
+	<?php
+	}
 ?>
-<body style="background:<?php if($mau['Background']['images']!='') echo"url(".DOMAIN."/".$mau['Background']['images'].") fixed no-repeat;";
-else {echo "#".$mau['Background']['color'];}
-?>">
-<?php }?>
+
+
     <div id='main'>
         <div id='header'>
 		<?php $ok=0;

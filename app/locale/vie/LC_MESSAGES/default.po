@@ -1,0 +1,53 @@
+msgid "home"
+msgstr "Trang chủ"
+
+msgid "about"
+msgstr "Giới thiệu"
+
+msgid "product"
+msgstr "Sản phẩm"
+
+msgid "project"
+msgstr "Dự án"
+
+msgid "agents"
+msgstr "Đại lý"
+
+msgid "news"
+msgstr "Tin tức"
+
+msgid "thuvienanh"
+msgstr "Thư viện ảnh"
+
+msgid "contact"
+msgstr "Liên hệ"
+
+msgid "partner"
+msgstr "Đối tác"
+
+msgid "congtrinhtb"
+msgstr "Công trình tiêu biểu"
+
+msgid "support"
+msgstr "Hỗ trợ trực tuyến"
+
+msgid "duantieubieu"
+msgstr "Dự án tiêu biểu"
+
+msgid "counter"
+msgstr "Thống kê truy cập"
+
+msgid "online_day"
+msgstr "Truy cập trong ngày"
+
+msgid "online_all"
+msgstr "Tổng số truy cập"
+
+msgid "sptieubieu"
+msgstr "Sản phẩm tiêu biểu"
+
+msgid "readmore"
+msgstr "Chi tiết"
+
+msgid "weather"
+msgstr "Thông tin hữu ích"
