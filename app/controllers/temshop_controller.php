@@ -3,11 +3,18 @@ class TemshopController extends AppController {
 
 	var $name = 'Temshop';
 	var $uses=array('City','Tems','Shops');
-	function index() {
-		  if(!$this->Session->read("id")){
+	
+	function index() 
+	{
+		echo '<pre>';
+		print_r($this->Session);
+		echo "</pre>";
+	
+		  if(!$this->Session->read("shop_id"))
+		{
 			 echo "<script>location.href='".DOMAIN."dang-nhap'</script>";
-		}else
-			{
+		}else{
+        
 			$this->layout='home2';
 			$this->set('imagestems',$this->Tems->find('all'));
 			$check=$this->Shops->find('all');
@@ -16,8 +23,8 @@ class TemshopController extends AppController {
 				foreach($check as $checks){
 			       $this->Session->write('shop_id',$checks['Shops']['id']);
 				}
-			 }
-			}
+			} 
+		}
 	   
 	}
 

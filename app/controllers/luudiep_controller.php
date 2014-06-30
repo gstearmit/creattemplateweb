@@ -25,7 +25,7 @@ class LuudiepController extends AppController {
 		$urlshop = explode ( '/', $pizza );
 		$geturl = $urlshop [0];
 		$this->set ( 'title_for_layout', 'Trang chủ' );
-		$sang = $this->Tems->find ( 'all' );
+		$sang = $this->Tems->find ( 'all' );                         // img background
 		$this->layout = 'themeshop/template';
 		$this->set ( 'title_for_layout', '' );
 		$user = $this->Session->read ( 'id' );
@@ -40,7 +40,7 @@ class LuudiepController extends AppController {
 				'limit' => 9 
 		);
 		$this->set ( 'productshop', $this->paginate ( 'Productshop', array () ) );
-		;
+	
 	}
 	function tin_tuc() {
 		$this->Session->write ( 'menu', 'tintuc' );

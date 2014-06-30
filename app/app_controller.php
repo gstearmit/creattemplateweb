@@ -33,15 +33,15 @@ class AppController extends Controller {
     }
 
 
-    function _setErrorLayout() {
-    	if ($this->name == 'AppEror') {
-    		$this->layout = 'error';
-    	}
-    }
+//     function _setErrorLayout() {
+//     	if ($this->name == 'AppEror') {
+//     		$this->layout = 'error';
+//     	}
+//     }
     
-    function beforeRender () {
-    	$this->_setErrorLayout();
-    }
+//     function beforeRender () {
+//     	$this->_setErrorLayout();
+//     }
    
     
     

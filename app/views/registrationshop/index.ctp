@@ -88,7 +88,9 @@ td{padding-top:5px;}
 	 <div class="content-top-body">
 	 	<form method="post" action="<?php echo DOMAIN?>registrationshop/add"  id="myform" name="image" enctype="multipart/form-data">
 <div class="member_register">
-	<?php echo $this->element('shopleft');?>
+
+	<?php //echo $this->element('shopleft');?>
+	
 	<div class="right" style="border-radius: 6px 6px 6px 6px;">
         <div class="ui-widget-header">Đăng ký mở gian hàng</div>
 		<div style="padding-left: 10px;padding-right: 10px; padding-top:10px;">
@@ -100,12 +102,12 @@ td{padding-top:5px;}
                         Địa chỉ gian hàng <font color="red">(*)</font>
                     </td>
                     <td align="left" width="70%" style="padding-top:20px;">
-                        <span class="lbBold">http://hoichogiare.com/</span><input type="text" class="textField" name="tengianhang" id="register-usershop" style="width:150px;" class="text-input-register textField">
+                        <span class="lbBold">http://localhost/websitetemplate/</span><input type="text" class="textField" name="tengianhang" id="register-usershop" style="width:150px;" class="text-input-register textField">
                          <div style="float:right; padding-right: 55px;" id="validate-usershop-register"><span id="error"></span></div>
                         
                         <div><span id="mainForm:validateNickName"><div id="mainForm:nickName1"></div>
                         <span class="lbComment">Địa chỉ gian hàng phải là các ký tự 0-9,a-z.</span>
-                        <span class="lbComment"> - Ví dụ: nếu tên công ty của bạn là Việt Tiến Mạnh, bạn nên chọn Địa chỉ gian hàng: viettienmanh</span></span>
+                        <span class="lbComment"> - Ví dụ: nếu tên công ty của bạn là Webnode, bạn nên chọn Địa chỉ gian hàng: webnode</span></span>
                         </div>
                     </td>
                 </tr>
@@ -197,6 +199,8 @@ td{padding-top:5px;}
                     </p>
                     </td>
                 </tr>
+                
+                <!--  
                 <tr>
                     <td align="left" width="120">
                         Nhập mã an toàn 
@@ -208,6 +212,8 @@ td{padding-top:5px;}
                              </a>
                     </td>
                 </tr>
+                -->
+                
                 <tr>
                     <td colspan="2" align="center">
                         <br />
