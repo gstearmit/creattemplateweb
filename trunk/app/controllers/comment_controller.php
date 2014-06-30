@@ -275,14 +275,16 @@ function binhchon(){
 		return $this->Newshop->find('all',array('conditions'=>array('Newshop.shop_id'=>$shop_id,'Newshop.categorynewsshop_id'=>221,'Newshop.status'=>1),'limit'=>3, 'order'=>'Newshop.id DESC'));
 	
 	}
-	function get_user_id($shop_id){
+	
+	function get_user_id($shop_id)
+	{
 	return $this->Shop->find('all',array('conditions'=>array('Shop.id'=>$shop_id,'Shop.status'=>1)));
 	
 	}
 	
-		function get_banner($user_id=null){
+  function get_banner($user_id=null)
+    {
 	return $this->Banner->find('all',array('conditions'=>array('Banner.user_id'=>$user_id),'limit'=>1,'order'=>'Banner.id DESC'));
-	
 	}
 	
 	function get_tem($user_id=null){

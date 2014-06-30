@@ -424,8 +424,8 @@ class RegistrationshopController extends AppController {
 		
 		//Copy views shops to views 
 		
-	    $source=DOCUMENT_ROOT.'app/views/shops/';
-		$destination=DOCUMENT_ROOT.'app/views/'.$_POST['tengianhang'];
+	    $source = DOCUMENT_ROOT.'app/views/shops/';
+		$destination = DOCUMENT_ROOT.'app/views/'.$_POST['tengianhang'];
 		//$source = DOMAIN.'app/views/shops/';
 		//$destination = DOMAIN.'app/views/'.$_POST['tengianhang'];
 		mkdir($destination, 0777); // so you get the sticky bit set 
@@ -443,10 +443,13 @@ class RegistrationshopController extends AppController {
 		//exit;
        
 		//echo($this->Common->unicode_convert($_POST['name']));
-		 // var_dump($this->data);die;
+		//pr($_POST);
+		//die;
+		
 		  $x=array();
 			$x['name']=$_POST['tengianhang'];
-			$x['user_id']=$this->Session->read("id");
+			//$x['user_id']=$this->Session->read("id");
+			$x['user_id']= 99; // 99 ma khach hang dang ki 
 			$x['slug']=$this->unicode_convert($_POST['tengianhang']);
 			$x['link']=$_POST['link'];
 			$x['business']=$_POST['business'];
@@ -460,6 +463,10 @@ class RegistrationshopController extends AppController {
 			$x['ckshops']=1;
 			$x['status']=1;
 			//mkdir("/path/to/my/dir", 0700);
+			
+// 			echo "lay gia tri </br>";
+// 			pr($x);
+// 			die;
 			
 		   $structure = GIANHANG.$_POST['tengianhang'].'/';
 		  
