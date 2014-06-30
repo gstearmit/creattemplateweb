@@ -206,6 +206,7 @@ echo $settings['Setting']['about'];
                             </p>
 							</td>
 						</tr>
+						<!-- 
 						<tr>
 							<td align="left" width="120">
 								Nhập mã an toàn 
@@ -219,6 +220,8 @@ echo $settings['Setting']['about'];
                              </a>
 							</td>
 						</tr>
+						-->
+						
 						<tr>
 							<td colspan="2" align="center">
                             	<br />

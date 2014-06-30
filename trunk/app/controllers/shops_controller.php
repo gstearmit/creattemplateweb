@@ -1,7 +1,7 @@
 <?php
- class ShoptestController extends AppController 
- {
-		  var $name = 'Shoptest';
+
+		  class shopsController extends AppController {
+		  var $name = 'shops';
 		  var $uses=array('Product','Tems','Shop','Newshop','Productshop','Categoryshop','Userscms','Classifiedss','Banner','Background');
 		  var $helpers = array('Html', 'Form', 'Javascript');
 
@@ -24,7 +24,7 @@
 		 }
 		 
 		  function tin_tuc() {	
-		  $this->Session->write('menu','tintu');
+		  $this->Session->write('menu','tintuc');
 		      $pizza = $_GET['url'];
 		     $urlshop = explode('/', $pizza);
 		     $geturl=$urlshop[0];
@@ -161,8 +161,7 @@
 		 }
 		 
 		 //list product
-		 function danh_sach_san_pham($id=null) 
-		 {	
+		 function danh_sach_san_pham($id=null) {	
 		 $this->Session->write('menu','sanpham');
 	
 		   $pizza = $_GET['url'];
@@ -175,9 +174,8 @@
 		   $user = $this->Session->read('id');
 			$temshop = $this->Shop->findAllByName($geturl);
             $idshop = $temshop[0]['Shop']['id'];
-			
 			if($id==null) {
-			$this->paginate=array('conditions'=>array('Productshop.status'=>1,'Productshop.shop_id'=>$idshop),'order'=>'Productshop.id DESC','limit'=>9);
+			$this->paginate=array('conditions'=>array('Productshop.status'=>1,'Productshop.shop_id'=>$idshop,'Productshop.user_id'=>$user),'order'=>'Productshop.id DESC','limit'=>9);
 			}
 			else
 			$this->paginate=array('conditions'=>array('Productshop.status'=>1,'Productshop.categoryshop_id'=>$id,'Productshop.shop_id'=>$idshop),'order'=>'Productshop.id DESC','limit'=>9);
@@ -190,16 +188,29 @@
 		 
 		 function chi_tiet_san_pham($id=null) {
 		 $this->set('title_for_layout', 'Chi tiết sản phẩm');
+		  $shop=explode('/',$this->params['url']['url']); 
+			$shopname=$shop[0];
+				$shop=$this->requestAction('comment/get_shop_id/'.$shopname);
+				foreach($shop as $key=>$value){
+				$user=$key;
+				}
+		 
+		 
 		 $this->Session->write('menu','sanpham');
+		 
 			 $sang = $this->Tems->find('all');
 			 $this->layout='themeshop/template';
 			if (!$id) {
 				$this->Session->setFlash(__('Không tồn tại', true));
 				$this->redirect(array('action' => 'index'));
 			}
-			$x=$this->Productshop->read(null, $id);
-			$this->set('views',$x);	
-			$this->set('list_others', $this->Productshop->find('all',array('conditions'=>array('Productshop.status'=>1,'Productshop.categoryshop_id'=>$x['Productshop']['categoryshop_id'],'Productshop.id <>'=>$id),'limit'=>10)));
+			$x1=$this->Productshop->findById($id);
+				
+				
+				$catproduct_id=$x1['Productshop']['categoryshop_id'];
+	
+			$this->set('views',$x1);
+			$this->set('list_others', $this->Productshop->find('all',array('conditions'=>array('Productshop.status'=>1,'Productshop.categoryshop_id'=>$catproduct_id,'Productshop.id <>'=>$id,'Productshop.shop_id'=>$user),'limit'=>10)));
 			$this->set('title_for_layout', 'Chi tiết sản phẩm');
 		}
 	

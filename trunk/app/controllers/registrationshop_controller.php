@@ -6,7 +6,9 @@ class RegistrationshopController extends AppController {
 	var $helpers = array('Html', 'Form', 'Javascript', 'TvFck');
 	function index() {
 		  
-			$this->checkIfLogged();
+// 		die('dang ki mo gian hang');
+		
+			//$this->checkIfLogged();
 			$city=$this->City->find('all');
 			$this->set('city',$city);
 			
@@ -41,15 +43,17 @@ class RegistrationshopController extends AppController {
 	
 	// dang ky gian hang 
 	function add() {
-		 $this->checkIfLogged();
-		// kiem tra ton tai gian hang
+		// $this->checkIfLogged(); // ham checki nay bi loi
+		 
+   // kiem tra ton tai gian hang
 		//echo ($_POST['tengianhang']);die;
-		 $name=$this->Shops->findAllByName($_POST['tengianhang']);
-		// pr(count($name));die;
+	    $name=$this->Shops->findAllByName($_POST['tengianhang']);  // pr(count($name));die;
 		if(count($name)==1){
 				echo "<script>alert('".json_encode('Tên gian hàng đã tồn tại!')."');</script>";
 				echo "<script>history.back(-1);</script>";
-	    }else{
+	    }else {
+	    	
+	    	
 	    $myFile = DOCUMENT_ROOT.'app/controllers/shops_controller.php';
 		//$myFile = DOMAIN.'app/controllers/shops_controller.php';
 		//pr($myFile);die;
@@ -268,7 +272,7 @@ class RegistrationshopController extends AppController {
 				\$catproduct_id=\$x1['Productshop']['categoryshop_id'];
 	
 			\$this->set('views',\$x1);
-			\$this->set('list_others', \$this->Productshop->find('all',array('conditions'=>array('Productshop.status'=>1,'Productshop.categoryshop_id'=>\$catproduct_id,'Productshop.id <>'=>\$id,,'Productshop.shop_id'=>\$user),'limit'=>10)));
+			\$this->set('list_others', \$this->Productshop->find('all',array('conditions'=>array('Productshop.status'=>1,'Productshop.categoryshop_id'=>\$catproduct_id,'Productshop.id <>'=>\$id,'Productshop.shop_id'=>\$user),'limit'=>10)));
 			\$this->set('title_for_layout', 'Chi tiết sản phẩm');
 		}
 	
@@ -560,7 +564,7 @@ class RegistrationshopController extends AppController {
 			}
         }
 		
-		function checkIfLogged(){
+	function checkIfLogged(){
 		if(!$this->Session->read("shopname") || !$this->Session->read("id")){
 			 $this->redirect('/dang-nhap');
 		}

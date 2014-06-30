@@ -85,7 +85,7 @@ foreach($guest as $guest){
 
 
   
-//$mailer->FromName = "hoichogiare.com";           // tên người gửi 
+//$mailer->FromName = "webnode.cz";           // tên người gửi 
 //$mailer->From = $x['Setting']['email'];     
   // mail người gửi 
 $mailer->AddAddress($guest['Guest']['email'],$guest['Guest']['email']);        //mail người nhậ
@@ -98,8 +98,8 @@ $mailer->Body = "<h1>Test 1 of PHPMailer html</h1>
     <p>This is a test picture: <img src=\"cid:logoimg\" /></p>"; 
 
 $mailer->Body = " 
-hoichogiare.com có sản phẩm mới
-<a target='_blank' href='http://develop.vtmgroup.com.vn/hoichogiare/san-pham/".$sanpham[0]['Product']['id']."'>
+webnode.cz có sản phẩm mới
+<a target='_blank' href='http://localhost/websitetemplate/san-pham/".$sanpham[0]['Product']['id']."'>
 ".$this->data['Product']['title']."
 </a>
 ";
