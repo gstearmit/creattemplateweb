@@ -31,6 +31,9 @@ msgstr "Công trình tiêu biểu"
 msgid "support"
 msgstr "Hỗ trợ trực tuyến"
 
+msgid "support21"
+msgstr "LIÊN HỆ"
+
 msgid "duantieubieu"
 msgstr "Dự án tiêu biểu"
 
@@ -51,3 +54,23 @@ msgstr "Chi tiết"
 
 msgid "weather"
 msgstr "Thông tin hữu ích"
+
+msgid "store"
+msgstr "GIAN HÀNG"
+
+msgid "consumer"
+msgstr "TIÊU DÙNG"
+
+msgid "tour"
+msgstr "DU LỊCH"
+
+msgid "office"
+msgstr "Trụ sở"
+
+msgid "Trading_Office"
+msgstr "Văn phòng giao dịch"
+
+msgid "telephone"
+msgstr "Điện thoại"
+
+

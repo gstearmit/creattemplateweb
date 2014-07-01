@@ -1,4 +1,4 @@
-﻿	msgid "home"
+msgid "home"
 msgstr "Home"
 
 msgid "about"
@@ -31,6 +31,9 @@ msgstr "Typical projects"
 msgid "support"
 msgstr "Support Online"
 
+msgid "support21"
+msgstr "Contact"
+
 msgid "duantieubieu"
 msgstr "Typical projects"
 
@@ -51,3 +54,21 @@ msgstr "Read more"
 
 msgid "weather"
 msgstr "Useful information"
+
+msgid "store"
+msgstr "E-Store"
+
+msgid "consumer"
+msgstr "CONSUMER"
+
+msgid "tour"
+msgstr "TOUR"
+
+msgid "office"
+msgstr "Office"
+
+msgid "Trading_Office"
+msgstr "Trading Office"
+
+msgid "telephone"
+msgstr "Telephone"

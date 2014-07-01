@@ -103,8 +103,9 @@
                     				<input type="submit" value="ĐĂNG NHẬP" class="subdk" />
                     				
                     		</form>
-                    	
+                    
                   </div><!-- id="dialog-modal" -->
+                 
 	   <?php   } //end if($email!='true' && $email1 ==null)   ?>
        
 	 <div class="content-top">
