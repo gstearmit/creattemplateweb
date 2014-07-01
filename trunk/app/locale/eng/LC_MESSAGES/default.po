@@ -72,3 +72,14 @@ msgstr "Trading Office"
 
 msgid "telephone"
 msgstr "Telephone"
+
+msgid "signin"
+msgstr "Sign in"
+
+msgid "register"
+msgstr "Register"
+
+msgid "langue"
+msgstr "English"
+
+

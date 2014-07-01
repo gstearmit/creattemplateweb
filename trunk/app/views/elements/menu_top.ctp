@@ -6,7 +6,7 @@
 	 		<li class="li-menu" style="margin-left:62px;"><a href="<?php echo DOMAIN?>tieu-dung"><?php __('consumer') ?></a></li>
 	 		<li class="li-menu" style="margin-left:45px;"><a href="<?php echo DOMAIN?>gian-hang"><?php __('store') ?></a></li>
 	 		<li class="li-menu" style="margin-left:60px;"><a href="<?php echo DOMAIN?>lien-he"> <?php __('support21') ?></a></li>
-             <div id="ngonngu"> <a href="<?php echo DOMAIN ?>home/?language=vie"><img align="absmiddle" src="<?php echo DOMAIN ?>images/vietnam.gif" />Tiếng Việt</a> <a href="<?php echo DOMAIN ?>home/?language=eng"><img  align="absmiddle" src="<?php echo DOMAIN ?>images/english.gif" />Tiếng Anh</a> </div>
+             <div id="ngonngu"> <a href="<?php echo DOMAIN ?>home/?language=vie"><img align="absmiddle" src="<?php echo DOMAIN ?>images/vietnam.gif" />Tiếng Việt</a> <a href="<?php echo DOMAIN ?>home/?language=eng"><img  align="absmiddle" src="<?php echo DOMAIN ?>images/english.gif" />English</a> </div>
                   	
 	 		<!-- hien thi cac thanh pho -->
              <li style="margin-left:50px; width:233px; overflow:hidden;">

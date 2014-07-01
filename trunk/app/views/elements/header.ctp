@@ -92,8 +92,8 @@ $bg= $sp['Product']['background'];
 			<a  class="a-dangky" href="<?php echo DOMAIN?>login/logout">Thoát</a> 
 			<?php } else {?>
 			
-			<a class="a-dangky" href="<?php echo DOMAIN?>dang-nhap">Đăng nhập </a> |
-			<a class="a-dangky" href="<?php echo DOMAIN?>dang-ky">Đăng ký</a>
+			<a class="a-dangky" href="<?php echo DOMAIN?>dang-nhap"><?php __('signin') ?> </a> |
+			<a class="a-dangky" href="<?php echo DOMAIN?>dang-ky"><?php __('register') ?></a>
 			<?php }?>
 			</p>
 			</div>
