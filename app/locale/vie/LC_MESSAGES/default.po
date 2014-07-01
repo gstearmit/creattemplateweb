@@ -74,3 +74,12 @@ msgid "telephone"
 msgstr "Điện thoại"
 
 
+msgid "signin"
+msgstr "Đăng nhập"
+
+msgid "register"
+msgstr "Đăng kí"
+
+msgid "langue"
+msgstr "Tiếng việt"
+
