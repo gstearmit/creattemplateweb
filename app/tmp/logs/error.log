@@ -1,0 +1,2 @@
+2014-07-02 16:03:29 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1048: Column 'email' cannot be null</span> in [E:\xampp\htdocs\websitetemplate\cake\libs\model\datasources\dbo_source.php, line 684]
+2014-07-02 16:06:00 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1048: Column 'email' cannot be null</span> in [E:\xampp\htdocs\websitetemplate\cake\libs\model\datasources\dbo_source.php, line 684]

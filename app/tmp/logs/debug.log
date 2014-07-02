@@ -1,0 +1,4 @@
+2014-07-02 16:03:29 Debug: Notice (8): Undefined index: txtdk in [E:\xampp\htdocs\websitetemplate\app\controllers\home_controller.php, line 76]
+2014-07-02 16:03:29 Debug: Notice (8): Undefined index: url in [E:\xampp\htdocs\websitetemplate\app\controllers\home_controller.php, line 78]
+2014-07-02 16:06:00 Debug: Notice (8): Undefined index: txtdk in [E:\xampp\htdocs\websitetemplate\app\controllers\home_controller.php, line 76]
+2014-07-02 16:06:00 Debug: Notice (8): Undefined index: url in [E:\xampp\htdocs\websitetemplate\app\controllers\home_controller.php, line 78]
