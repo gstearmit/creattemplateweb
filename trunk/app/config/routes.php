@@ -1,6 +1,12 @@
 <?php
 
-	Router::connect('/', array('controller' => 'home', 'action' => 'index'));
+	//Router::connect('/', array('controller' => 'home', 'action' => 'index'));	
+    Router::connect('/', array('controller' => 'home', 'action' => 'creattemplate'));
+    Router::connect('/business-websites', array('controller' => 'home', 'action' => 'businesswebsites'));
+    Router::connect('/e-commerce', array('controller' => 'home', 'action' => 'ecommerce'));
+    Router::connect('/personal-websites', array('controller' => 'home', 'action' => 'personalwebsites'));
+    Router::connect('/sign-in', array('controller' => 'home', 'action' => 'signin'));
+  
 	Router::connect('/home/*', array('controller' => 'home', 'action' => 'index'));
 	Router::connect('/dang-ky-email', array('controller' => 'home', 'action' => 'register'));
 	Router::connect('/tieu-dung', array('controller' => 'listproduct', 'action' => 'tieudung'));

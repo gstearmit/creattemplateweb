@@ -52,11 +52,22 @@ class RegistrationshopController extends AppController {
 				echo "<script>alert('".json_encode('Tên gian hàng đã tồn tại!')."');</script>";
 				echo "<script>history.back(-1);</script>";
 	    }else {
+
+	    	//Copy shop_controller to shopname_controller
+	    	$fromfile = DOCUMENT_ROOT.'app/controllers/shops_controller.php';
+	    	$tofile = DOCUMENT_ROOT.'app/controllers/'.$_POST['tengianhang'].'_controller.php';
+	    	
+	    	if (file_exists($tofile)){
+	    		print "Tên gian hàng đã tồn tại";
+	    		exit;
+	    	}
+	    	copy ( $fromfile , $tofile );
 	    	
 	    	
-	    $myFile = DOCUMENT_ROOT.'app/controllers/shops_controller.php';
+	    $myFile = DOCUMENT_ROOT.'app/controllers/'.$_POST['tengianhang'].'_controller.php';
 		//$myFile = DOMAIN.'app/controllers/shops_controller.php';
 		//pr($myFile);die;
+		
 		$fh = fopen($myFile, 'w') or die("can't open file");
 		//gan du lieu thanh 1 file khac
 		$stringData = "";
@@ -412,15 +423,7 @@ class RegistrationshopController extends AppController {
 		fwrite($fh, $stringData);
 		fclose($fh);
 		
-		//Copy shop_controller to shopname_controller
-		$fromfile = DOCUMENT_ROOT.'app/controllers/shops_controller.php';
-		$tofile = DOCUMENT_ROOT.'app/controllers/'.$_POST['tengianhang'].'_controller.php';
 		
-		if (file_exists($tofile)){
-			print "Tên gian hàng đã tồn tại";
-			exit;
-		}
-		copy ( $fromfile , $tofile );
 		
 		//Copy views shops to views 
 		
