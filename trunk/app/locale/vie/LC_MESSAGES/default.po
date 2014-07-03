@@ -83,3 +83,13 @@ msgstr "Đăng kí"
 msgid "langue"
 msgstr "Tiếng việt"
 
+msgid "ecommerce"
+msgstr "E-Store"
+
+msgid "Businesswebsite"
+msgstr "Website kinh doanh"
+
+msgid "Personalwebsite"
+msgstr "Website cá nhân"
+
+
