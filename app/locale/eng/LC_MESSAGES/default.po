@@ -82,4 +82,8 @@ msgstr "Register"
 msgid "langue"
 msgstr "English"
 
+msgid "ecommerce"
+msgstr "E-commerce"
+
+
 
