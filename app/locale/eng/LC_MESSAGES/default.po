@@ -85,5 +85,16 @@ msgstr "English"
 msgid "ecommerce"
 msgstr "E-commerce"
 
+msgid "Businesswebsite"
+msgstr "Business website"
+
+msgid "Personalwebsite"
+msgstr "Personal website"
+
+
+msgid "sologan"
+msgstr "Create a free website easily!"
+
+
 
 

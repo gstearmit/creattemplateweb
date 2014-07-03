@@ -92,4 +92,6 @@ msgstr "Website kinh doanh"
 msgid "Personalwebsite"
 msgstr "Website cá nhân"
 
+msgid "sologan"
+msgstr "Tạo trang web miễn phí!"
 

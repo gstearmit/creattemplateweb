@@ -191,18 +191,18 @@
 		</div><!-- end row content -->
 			<hr class="hidden">
 			<div id="headerForms">
-				<form id="headerSignUp" action="/" method="post"
-					onsubmit="return SignUp.onSubmit(this);"
-					enctype="application/x-www-form-urlencoded">
+				<form id="headerSignUp" action="<?php echo DOMAIN ?>launch-your-site" method="post" enctype="application/x-www-form-urlencoded"><!-- onsubmit="return SignUp.onSubmit(this);" -->
 					<fieldset class="withoutSeparator">
 						<div id="registrantFullNameWrapper">
 							<div class="formRow" id="registrantFullNameRow">
-								<label for="registrantFullName" id="registrantFullNameLabel">Website
-									name&nbsp;<b>*</b>
-								</label><span class="inputCase"><input id="registrantFullName"
-									name="fullname" type="text" value="" maxlength="32"><i>
+								<label for="registrantFullName" id="registrantFullNameLabel">Website name&nbsp;<b>*</b>
+								</label>
+								   <span class="inputCase"><input id="registrantFullName"
+									name="storename" type="text" value="" maxlength="32">
+									<i>
 										<!-- -->
-								</i></span>
+								   </i>
+								   </span>
 								<div class="inputHint" id="registrantFullNameHint">
 									<h4>Website name</h4>
 									<p>This form entry should contain the name of your website.</p>
@@ -214,12 +214,14 @@
 						</div>
 						<div id="signupUserEMailWrapper">
 							<div class="formRow" id="signupUserEMailRow">
-								<label for="signupUserEMail" id="signupUserEMailLabel">Email
-									address&nbsp;<b>*</b>
-								</label><span class="inputCase"><input id="signupUserEMail"
-									name="mail" type="email" value="" maxlength="255"><i>
+								<label for="signupUserEMail" id="signupUserEMailLabel">Email address&nbsp;<b>*</b>
+								</label>
+								  <span class="inputCase">
+								 <input id="signupUserEMail" name="mail" type="email" value="" maxlength="255">
+									<i>
 										<!-- -->
-								</i></span>
+								   </i>
+								  </span>
 								<div class="inputHint" id="signupUserEMailHint">
 									<h4>Email address</h4>
 									<p>Your email address will be used as your login. Don't worry,
@@ -252,8 +254,7 @@
 						<noscript>
 							<div id="aa62a6988a6Wrapper">
 								<div class="formRow" id="aa62a6988a6Row">
-									<label for="aa62a6988a6" id="aa62a6988a6Label">Copy the
-										following text into the field:<strong>2f0785f6f9</strong>
+									<label for="aa62a6988a6" id="aa62a6988a6Label">Copy the following text into the field:<strong>2f0785f6f9</strong>
 									</label><span class="inputCase"><input id="aa62a6988a6"
 										name="aa62a6988a6" type="text" value="" maxlength="255"><i>
 											<!-- -->
@@ -270,8 +271,8 @@
 						<div class="cleaner">
 							<!-- -->
 						</div>
-						<span id="headerSignUpButton" class="buttonCase"><button
-								type="submit">
+						<span id="headerSignUpButton" class="buttonCase">
+						<button type="submit" onclick="return validateData()" >
 								<b>Sign up</b> <span>and launch your site</span><i>
 									<!-- -->
 								</i>
